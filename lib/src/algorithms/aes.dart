@@ -122,6 +122,7 @@ enum AESMode {
   ofb64,
   sic,
   gcm,
+  cfb,
 }
 
 const Map<AESMode, String> _modes = {
@@ -133,6 +134,7 @@ const Map<AESMode, String> _modes = {
   AESMode.ofb64: 'OFB-64',
   AESMode.sic: 'SIC',
   AESMode.gcm: 'GCM',
+  AESMode.cfb: 'CFB',
 };
 
 const List<AESMode> _streamable = [
